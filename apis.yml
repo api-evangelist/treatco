@@ -1,7 +1,27 @@
 aid: treatco
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/treatco.png
 name: Treat.co
-description: Treat.co is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Treat.co was a consumer gifting e-commerce startup surfaced as a
+  portfolio company of 500 Global and added to the API Evangelist network as an
+  enrichment lead. As of this enrichment pass the treat.co domain is controlled by
+  Mars, Incorporated: it resolves to an AWS Application Load Balancer presenting a
+  certificate for alb-redirect.mars.com and returns HTTP 403 on every probed path
+  (homepage, /.well-known/security.txt, /api, /developers), with no MX record for
+  email. The company therefore exposes no public website, developer portal,
+  documentation, or API surface today; it appears dormant or absorbed following
+  acquisition. This profile records the domain-security probe and is retained as a
+  network lead pending any revived or successor developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/treatco/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +29,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: dormant
+x-status-note: 'treat.co domain controlled by Mars, Incorporated (ALB cert alb-redirect.mars.com);
+  all paths return HTTP 403; no MX; no public website or API surface as of 2026-07-21.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Gifting
+- E-Commerce
+- Consumer
+- Retail
+- Confectionery
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/treatco-domain-security.yml
 - type: Website
   url: https://treat.co
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
