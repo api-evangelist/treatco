@@ -32,7 +32,7 @@ x-tier-reason: portfolio-lead
 x-status: dormant
 x-status-note: 'treat.co domain controlled by Mars, Incorporated (ALB cert alb-redirect.mars.com);
   all paths return HTTP 403; no MX; no public website or API surface as of 2026-07-21.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
