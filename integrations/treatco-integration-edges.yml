@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/treatco/integrations
+- https://zapier.com/apps/treat-co/integrations
+- https://n8n.io/integrations/treatco/
+- https://composio.dev/toolkits/treatco
+- https://monid.ai/tools/treatco
+checked:
+- https://composio.dev/toolkits/treatco
+- https://monid.ai/tools/treatco
+- https://n8n.io/integrations/treatco/
+- https://zapier.com/apps/treat-co/integrations
+- https://zapier.com/apps/treatco/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
